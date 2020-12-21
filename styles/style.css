@@ -200,6 +200,9 @@ h2, h3 {
 
 /* tablet */
 @media screen and (max-width: 1024px) {
+    body {
+        font-size: 1em;
+    }
 
     .docSlider-button {
         height: 2em;
@@ -250,9 +253,6 @@ h2, h3 {
 
 /* mobile */
 @media screen and (max-width: 667px) {
-    body {
-        font-size: 1em;
-    }
 
     .docSlider-pager {
         right: .5em;
