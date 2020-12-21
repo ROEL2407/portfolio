@@ -95,7 +95,7 @@ h3 {
     flex-wrap: wrap;
     margin-top: 1em;
     margin-left: 1em;
-    max-width: 90%;
+    width: 90%;
 }
 
 #proj_wrapper a {
@@ -204,7 +204,7 @@ h3 {
 /* tablet */
 @media screen and (max-width: 1024px) {
     body {
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
     .docSlider-button {
@@ -243,10 +243,15 @@ h3 {
 
     #proj_wrapper {
         margin-bottom: 1em;
+        flex-direction: column;
     }
 
     #proj_wrapper a {
         margin: 0 auto 1em auto;
+    }
+
+    .proj {
+        margin: 0 auto;
     }
 
     .proj h3 {
@@ -259,6 +264,9 @@ h3 {
 
 /* mobile */
 @media screen and (max-width: 667px) {
+    body {
+        font-size: 1em;
+    }
 
     .docSlider-pager {
         right: .5em;
