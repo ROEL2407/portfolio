@@ -1,12 +1,11 @@
-*, html {
-    height: 100%;
-}
+
 
 body {
     font-family: 'Montserrat', sans-serif;
     position: relative;
     background: linear-gradient(120deg, #73d4db 0%, #66a6ff 100%);
     font-size: 1.5em;
+    height: 100%;
 }
 
 a {
