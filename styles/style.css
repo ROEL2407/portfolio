@@ -124,6 +124,17 @@ h1 {
     padding: 0 1em;
 }
 
+#proj_wrapper a:nth-child(2) section p:first-of-type {
+    margin: 0;
+    color: red;
+    text-transform: uppercase;
+
+}
+
+#proj_wrapper a:nth-child(2) section p:last-of-type {
+    margin-top: 0;
+}
+
 #contact {
     text-align: left;
     align-items: flex-start;
@@ -171,20 +182,34 @@ h1 {
 
 /* tablet */
 @media screen and (max-width: 1024px) {
-    body {
-        font-size: 2em;
+
+    .docSlider-button {
+        height: 2.5em;
+        width: 2.5em;
+        margin: 1em 0;
     }
 
     #landing h1 {
-        font-size: 4em;
+        font-size: 3.5em;
+        margin: 0;
     }
 
     #me {
         flex-direction: column;
     }
 
-    #me, #projecten {
+    #me,
+    #projecten {
         text-align: center;
+    }
+
+    #me h2 {
+        margin-bottom: .5em;
+    }
+
+    #me section:first-of-type p {
+        max-width: 80%;
+        margin: 0 auto;
     }
 
     #projecten h2 {
@@ -198,9 +223,31 @@ h1 {
     }
 
     #contact p:last-of-type {
-        left: 40%;
+        left: 36.5%;
     }
 }
 
 /* mobile */
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 667px) {
+    body {
+        font-size: 1em;
+    }
+
+    .docSlider-pager {
+        right: .5em;
+    }
+
+    .docSlider-button {
+        height: 1.5em;
+        width: 1.5em;
+        margin: 1em 0;
+    }
+
+    #landing h1 {
+        font-size: 2.5em;
+    }
+
+    #proj_wrapper {
+        margin-left: 1em;
+    }
+}
