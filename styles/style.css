@@ -1,4 +1,14 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    height: 100%;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -16,6 +26,10 @@ h1 {
     font-size: 2.5em;
 }
 
+h2, h3 {
+    margin: 1em 0;
+}
+
 .inner {
     height: 100%;
     display: flex;
@@ -23,10 +37,6 @@ h1 {
     align-items: center;
     flex-direction: column;
     background: linear-gradient(120deg, #73d4db 0%, #66a6ff 100%);
-}
-
-.inner h2 {
-    margin-bottom: 0;
 }
 
 #landing {
@@ -73,6 +83,7 @@ h1 {
 
 #projecten h2 {
     margin-left: 1em;
+    margin-bottom: 0;
 }
 
 #proj_wrapper {
@@ -127,15 +138,15 @@ h1 {
     padding: 0 1em;
 }
 
+#proj_wrapper a section p {
+    margin-bottom: 1em;
+}
+
 #proj_wrapper a:nth-child(2) section p:first-of-type {
     margin: 0;
     color: red;
     text-transform: uppercase;
 
-}
-
-#proj_wrapper a:nth-child(2) section p:last-of-type {
-    margin-top: 0;
 }
 
 #contact {
@@ -147,11 +158,15 @@ h1 {
 
 #contact a {
     color: #000;
+    margin-bottom: 1em;
 }
 
 #contact p {
-    margin-bottom: .5em;
     font-weight: bold;
+}
+
+#contact section {
+    margin-top: .5em;
 }
 
 #contact i {
@@ -252,5 +267,9 @@ h1 {
 
     #proj_wrapper {
         margin-left: 1em;
+    }
+
+    #contact p:last-of-type {
+        left: 30%;
     }
 }
