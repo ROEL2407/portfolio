@@ -222,6 +222,10 @@ h3 {
         flex-direction: column;
     }
 
+    #me section p {
+        font-size: 1em;
+    }
+
     #me,
     #projecten {
         text-align: center;
@@ -246,7 +250,7 @@ h3 {
     }
 
     #proj_wrapper a {
-        margin: 0 auto 1em auto;
+        margin: 0 0 1em 1em;
     }
 
     .proj {
@@ -284,6 +288,11 @@ h3 {
     #proj_wrapper {
         margin-left: 1em;
         margin-bottom: 2.5em;
+        flex-direction: column;
+    }
+
+    #proj_wrapper a {
+        margin: 0 0 1em 0;
     }
 
     #me section:first-of-type p {
