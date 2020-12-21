@@ -26,7 +26,8 @@ h1 {
     font-size: 2.5em;
 }
 
-h2, h3 {
+h2,
+h3 {
     margin: 1em 0;
 }
 
@@ -37,6 +38,8 @@ h2, h3 {
     align-items: center;
     flex-direction: column;
     background: linear-gradient(120deg, #73d4db 0%, #66a6ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #landing {
@@ -242,10 +245,13 @@ h2, h3 {
         margin-bottom: 1em;
     }
 
-        #proj_wrapper a {
+    #proj_wrapper a {
         margin: 0 auto 1em auto;
     }
 
+    .proj h3 {
+        margin-top: .5em;
+    }
     #contact p:last-of-type {
         left: 36.5%;
     }
