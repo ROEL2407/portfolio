@@ -1,0 +1,1 @@
+docSlider.init();
