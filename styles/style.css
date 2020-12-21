@@ -1,6 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    background: linear-gradient(120deg, #73d4db 0%, #66a6ff 100%);
+    font-size: 1.5em;
 }
 
 a {
@@ -11,38 +13,12 @@ h1 {
     font-size: 2.5em;
 }
 
-nav {
-    position: absolute;
-    right: 1em;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-
-}
-
-nav a {
-    color: black;
-}
-
-nav li {
-    margin-right: 1em;
-}
-
-nav a {
-
-}
-
 .inner {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 1.5em;
     background: linear-gradient(120deg, #73d4db 0%, #66a6ff 100%);
 }
 
@@ -96,11 +72,19 @@ nav a {
     margin-left: 1em;
 }
 
-#projecten #proj_wrapper {
+#proj_wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 1em;
     margin-left: 1em;
+    max-width: 90%;
+}
+
+#proj_wrapper a {
+    color: #000;
+    margin-bottom: 1em;
+    margin-right: 1em;
 }
 
 .proj {
@@ -108,16 +92,36 @@ nav a {
     border: 1px solid black;
     overflow: hidden;
     max-width: 20em;
-    margin-right: 1em;
+    height: 100%;
     text-align: center;
-    position: relative
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+#proj_wrapper a:hover .proj {
+    box-shadow: 2px 2px 3px;
+    background: linear-gradient(120deg, #73d4db 0%, #34c1cb 100%);
+    transition: .5s;
 }
 
 .proj img {
     max-width: 20em;
 }
 
+#proj_wrapper a:nth-child(2) img {
+    max-width: 15em;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
 .proj section {
+    align-self: flex-end;
+}
+
+.proj section p {
+    padding: 0 1em;
 }
 
 #contact {
@@ -141,7 +145,8 @@ nav a {
     margin-right: .25em;
 }
 
-#contact a:first-of-type i:hover { /* https://stackoverflow.com/questions/43075853/linear-gradient-on-hover */
+#contact a:first-of-type i:hover {
+    /* https://stackoverflow.com/questions/43075853/linear-gradient-on-hover */
     background: #f09433;
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -161,5 +166,41 @@ nav a {
 #contact p:last-of-type {
     position: absolute;
     bottom: 1em;
-    left: 36em;
+    left: 45%;
 }
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 2em;
+    }
+
+    #landing h1 {
+        font-size: 4em;
+    }
+
+    #me {
+        flex-direction: column;
+    }
+
+    #me, #projecten {
+        text-align: center;
+    }
+
+    #projecten h2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #proj_wrapper {
+        justify-content: center;
+        margin-left: 2em;
+    }
+
+    #contact p:last-of-type {
+        left: 40%;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {}
