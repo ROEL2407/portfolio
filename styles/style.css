@@ -202,8 +202,8 @@ h2, h3 {
 @media screen and (max-width: 1024px) {
 
     .docSlider-button {
-        height: 2.5em;
-        width: 2.5em;
+        height: 2em;
+        width: 2em;
         margin: 1em 0;
     }
 
@@ -236,8 +236,11 @@ h2, h3 {
     }
 
     #proj_wrapper {
-        justify-content: center;
-        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+        #proj_wrapper a {
+        margin: 0 auto 1em auto;
     }
 
     #contact p:last-of-type {
